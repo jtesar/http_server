@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo Additional content > /var/www/html/additional.html
+
+/usr/libexec/s2i/assemble

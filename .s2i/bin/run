@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo RUN script content > /var/www/html/run.html
+
+/usr/libexec/s2i/run
