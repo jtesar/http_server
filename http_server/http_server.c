@@ -40,7 +40,7 @@ void handle_request(int new_socket) {
         sprintf(response, "HTTP/1.1 200 OK\nContent-Type: text/html\nContent-Length: %zu\n\n%s",
                 strlen(file_contents), file_contents);
     }
-
+  
     // Send the response to the client
     send(new_socket, response, strlen(response), 0);
     printf("Response sent\n");
