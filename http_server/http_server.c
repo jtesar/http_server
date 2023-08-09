@@ -28,7 +28,7 @@ void handle_request(int new_socket) {
     FILE *file = fopen(filepath, "r");
     if (file == NULL) {
         // File not found, send a 404 response
-        sprintf(response, "HTTP/1.1 404 Not Found\nContent-Type: text/plain\n\nFile not found");
+        sprintf(response, "HTTP/1.1 404 Not Found\nContent-Type: text/plain\n\nFile not found\n");
     } else {
         // File found, read its contents
         char file_contents[RESPONSE_SIZE];
