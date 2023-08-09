@@ -14,18 +14,16 @@ fi
 
 # Restore artifacts from the previous build (if they exist).
 #
+cp -Rf /tmp/src/* .
+
 if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   echo "---> Restoring build artifacts..."
   shopt -s dotglob
   ls /tmp/artifacts/
   mv /tmp/artifacts/*.o http_server
-  ls http_server
-  echo /tmp/src
-  ls /tmp/src
   shopt -u dotglob
 fi
 
-cp -Rf /tmp/src/* .
 
 echo "---> Building application from source..."
 (cd http_server && make)
