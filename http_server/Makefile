@@ -9,12 +9,15 @@ SRC = http_server.c
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
+http_server.o: $(SRC)
+	gcc -c $<
+
+$(TARGET): http_server.o
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
 
 install: $(TARGET)
 	install -m 755 $(TARGET) $(INSTALL_DIR)
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) *.o
 
