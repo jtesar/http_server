@@ -3,7 +3,7 @@ CFLAGS =
 LDFLAGS =
 
 TARGET = http_server
-INSTALL_DIR = /usr/local/bin
+INSTALL_DIR = /opt/app-root/bin
 
 SRC = http_server.c
 
