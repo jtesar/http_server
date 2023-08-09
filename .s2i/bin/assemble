@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo another page > /var/www/html/another.html
+
+/usr/libexec/s2i/assemble
+
+echo another page 2 > /var/www/html/another2.html
