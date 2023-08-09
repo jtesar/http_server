@@ -27,6 +27,7 @@ fi
 
 echo src:
 ls http_server
+touch http_server/*.o
 echo "---> Building application from source..."
 (cd http_server && make)
 
