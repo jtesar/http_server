@@ -8,7 +8,7 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-cd /opt/app-root/build/http_server/
+cd /opt/app-root/artifacts/
 if [ -f http_server.o ]; then
 
 tar cf - *.o
