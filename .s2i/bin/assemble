@@ -25,6 +25,8 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
 fi
 
 
+echo src:
+ls http_server
 echo "---> Building application from source..."
 (cd http_server && make)
 
