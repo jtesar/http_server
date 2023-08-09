@@ -7,6 +7,8 @@
 # For more information see the documentation:
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
-if [ -f http_server/http_server.o ]; then
-tar cf - http_server/*.o
+cd /opt/app-root/build/http_server/
+if [ -f http_server.o ]; then
+
+tar cf - *.o
 fi
