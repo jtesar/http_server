@@ -20,6 +20,8 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   ls /tmp/artifacts/
   mv /tmp/artifacts/*.o http_server
   ls http_server
+  echo /tmp/src
+  ls /tmp/src
   shopt -u dotglob
 fi
 
