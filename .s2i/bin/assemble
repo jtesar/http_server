@@ -32,7 +32,7 @@ echo "---> Installing application source..."
 (cd http_server && make install)
 
 mkdir artifacts
-cp http_server/*.o artifacts
+cp http_server/*.o $APPROOT/artifacts
 
 
 cp -Rf data/* $DOCROOT
