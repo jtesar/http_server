@@ -19,6 +19,7 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   shopt -s dotglob
   ls /tmp/artifacts/
   mv /tmp/artifacts/*.o http_server
+  ls http_server
   shopt -u dotglob
 fi
 
