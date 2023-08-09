@@ -24,7 +24,7 @@ fi
 cp -Rf /tmp/src/. ./
 
 echo "---> Building application from source..."
-(cd http_server && make && cp *.o /opt/app-root/bin)
+(cd http_server && make)
 
 echo "---> Installing application source..."
 (cd http_server && make install)
