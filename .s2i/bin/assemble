@@ -31,6 +31,9 @@ echo "---> Building application from source..."
 echo "---> Installing application source..."
 (cd http_server && make install)
 
+mkdir artifacts
+cp http_server/*.o artifacts
+
 
 cp -Rf data/* $DOCROOT
 cd ..
